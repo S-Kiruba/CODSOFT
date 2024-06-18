@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>  
+    <h1 class="h">Basic Calculator</h1>
+    <div class="calc">
+        <input type="text"  id="res">
+        <div class="buttons">
+            <input type="button" class="operator" value="+" onclick="cal('+')">
+            <input type="button" class="operator" value="-" onclick="cal('-')">
+            <input type="button" class="operator" value="*" onclick="cal('*')">
+            <input type="button" class="operator" value="/" onclick="cal('/')">
+            <br>
+            <input type="button" class="numeric" value="1" onclick="cal('1')">
+            <input type="button" class="numeric" value="2" onclick="cal('2')">
+            <input type="button" class="numeric" value="3" onclick="cal('3')">
+            <input type="button" class="operator" value="%" onclick="cal('%')">
+            <br>
+            <input type="button" class="numeric" value="4" onclick="cal('4')">
+            <input type="button" class="numeric" value="5" onclick="cal('5')">
+            <input type="button" class="numeric" value="6" onclick="cal('6')">
+            <input type="button" class="del" value="Del" onclick="del()">
+            <br>
+            <input type="button" class="numeric" value="7" onclick="cal('7')">
+            <input type="button" class="numeric" value="8" onclick="cal('8')">
+            <input type="button" class="numeric" value="9" onclick="cal('9')">
+            <input type="button" class="AC" value="AC" onclick="AC()">
+            <br>
+            <input type="button" class="numeric" value="00" onclick="cal('00')">
+            <input type="button" class="numeric" value="0" onclick="cal('0')">
+            <input type="button" class="numeric" value="." onclick="cal('.')">
+            <input type="button" class="result" value="=" onclick="result()">
+            <br>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
